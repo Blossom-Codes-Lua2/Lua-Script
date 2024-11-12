@@ -23,3 +23,13 @@ local BestSection = BestTab:NewSection("Locals")
 BestSection:NewButton("Solora Hub", "300+ scripts", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/Solara%20Hub.lua"))()
 end)
+
+--general
+
+local GeneralTab = MainWindow:NewTab("General")
+local GeneralSection = GeneralTab:NewSection("ui stuff")
+
+GeneralSection:NewKeybind("Close/Open UI", "...", Enum.KeyCode.LeftCtrl, function()
+	Library:ToggleUI()
+end)
+
