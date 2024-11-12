@@ -29,7 +29,7 @@ end)
 local GeneralTab = MainWindow:NewTab("General")
 local UISection = GeneralTab:NewSection("ui")
 
-UISection:NewKeybind("Close/Open UI", "...", Enum.KeyCode.F, function()
+UISection:NewKeybind("Close/Open UI", "...", Enum.KeyCode.LeftControl, function()
 	Library:ToggleUI()
 end)
 
