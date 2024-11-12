@@ -1,0 +1,25 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local MainWindow = Library.CreateLib("Useless hub", "Synapse")
+
+local FischTab = MainWindow:NewTab("Fisch")
+local FischSection = FischTab:NewSection("Fisch")
+
+--fisch
+
+FischSection:NewButton("BonkHub", "Fischscript", function()
+    loadstring(game:HttpGet("https://bonkhubloader.netlify.app",true))()
+end)
+
+FischSection:NewButton("SpeedX", "Fischscript", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+
+--best local
+
+local BestTab = MainWindow:NewTab("Locals")
+local BestSection = BestTab:NewSection("Locals")
+
+BestSection:NewButton("Solora Hub", "300+ scripts", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/Solara%20Hub.lua"))()
+end)
